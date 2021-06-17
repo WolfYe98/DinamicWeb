@@ -1,0 +1,31 @@
+main{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.formulario{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 200px;
+  margin-left: 200px;
+}
+.secciones{
+  margin-top: 10px;
+  height: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+.deleteImage{
+  width:20px;
+  height: auto;
+  margin-top: 5px;
+  align-self: flex-end;
+  position: relative;
+  right: 0px;
+}
+.deleteImage:hover{
+  cursor:pointer;
+}

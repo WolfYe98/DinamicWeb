@@ -1,0 +1,25 @@
+body{
+  width: 100%;
+  height: 100%;
+}
+header{
+  width: inherit;
+  height: 20%;
+  background-color: black;
+}
+main{
+  height: 20%;
+  background-color: cyan;
+}
+section{
+  height: 20%;
+  background-color: pink;
+}
+article{
+  height: 20%;
+  background-color: yellow;
+}
+footer{
+  height: 20%;
+  background-color:brown;
+}

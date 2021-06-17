@@ -1,0 +1,78 @@
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #3E495E;
+  margin-top:7%;
+  color: white;
+  font-family: arial;
+}
+header h1{
+  text-shadow: 0px 0px 3px cyan;
+  font-size: 40px;
+  animation: carga-x 0.5s ease-in 1 alternate;
+}
+.alta-usuario{
+  align-items: center;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px white solid;
+  width: 500px;
+  height: 500px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 5px black;
+  transition:0.8s;
+  animation: carga 1.2s ease-in 1 alternate;
+}
+
+@keyframes carga-x{
+  from{
+    transform: translateX(1000px);
+  }
+  to{
+    transform: translate(0px);
+  }
+}
+@keyframes carga{
+  from{
+    transform: translateX(-1500px);
+  }
+  to{
+    transform: translate(0px);
+  }
+}
+.alta-usuario:hover{
+  transform:scale(1.2);
+}
+.form-label{
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 25px;
+  align-self: flex-start;
+  margin-left: 125px;
+}
+.form-input{
+  margin-bottom: 10px;
+  width: 50%;
+  height: 20px;
+  border-radius: 7px;
+  transition:0.5s;
+}
+
+.form-input:hover{
+  transform: scale(1.2);
+}
+.lista-desplegable{
+  width: 30%;
+  height: 30px;
+  font-size: 14px;
+  align-self: flex-start;
+  margin-left: 125px;
+  transition: 0.5s;
+}
+.lista-desplegable:hover{
+  transform: scale(1.2);
+}

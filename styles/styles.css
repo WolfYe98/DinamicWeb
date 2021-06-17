@@ -1,0 +1,252 @@
+html,body{
+  height: 100%;
+}
+body{
+  height: 98%;
+  border: 1px solid black;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  transition: 1s
+}
+header{
+  background-image: url(../imagenes/cab.jpg);
+  background-repeat: repeat-x;
+  background-size: contain;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  align-content: flex-start;
+}
+
+/*Logo cabecera*/
+#logo{
+  order: 2;
+  width: 100px;
+  height: 100px;
+  flex-basis: auto;
+  padding-top: 1%;
+  transition: 1s;
+}
+#logo:hover{
+  transform: scale(1.25);
+}
+#logo img{
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+}
+#logo img:hover{
+  cursor: pointer;
+  transform: rotate(360deg);
+}
+/*Titulo cabecera*/
+#title{
+  order: 2;
+  padding-top: 1%;
+  font-size-adjust: auto;
+  font-size: 40px;
+  color: white;
+}
+
+/*Formulario de la cabecera*/
+#form-link{
+  color:white;
+  order: 2;
+}
+#form-link form{
+  display: flex;
+  flex-direction: column;
+}
+#form-link form input{
+  border:1px solid black;
+  border-radius: 10px;
+  text-align: center;
+}
+#form-link form label{
+  align-self: center;
+}
+#form-link form input,label{
+  margin-top: 5px;
+}
+a{
+  color: white;
+  font-weight: bold;
+}
+
+#enviar{
+  width: 50%;
+  align-self: center;
+  background-color: #6AF0FF;
+  transition: 1s;
+}
+#enviar:hover{
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 2px #E3C8FF;
+}
+.textos{
+  background-color: cyan;
+}
+
+/*Navegación cabecera*/
+#header-nav{
+  border-top:1px solid grey;
+  order: 3;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  background-color: #AAFFFF;
+  border-bottom: 1px solid black;
+  margin-top: 10px;
+}
+.nav-item{
+  margin-left: 5%;
+  transition: 0.7s;
+  text-decoration: underline;
+  color: black;
+}
+.nav-item:hover{
+  cursor: pointer;
+  font-size: 15px;
+	transform: scale(1.5);
+	z-index: 1;
+}
+
+main{
+  display: flex;
+  flex-direction: row;
+  height: 74%;
+}
+section{
+  height: 100%;
+  width: 50%;
+}
+
+#representativo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-around;
+
+}
+#representativo img{
+  width: 90%;
+  height:90%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#articulos{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+#articulos h1{
+  text-align: center;
+}
+
+.articulo{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 29%;
+  background-color: white;
+  margin-bottom: 5px;
+  transition: 1s;
+  justify-content:flex-start;
+}
+.articulo a{
+  display: flex;
+  flex-direction: row;
+  color: black;
+  text-decoration: none;
+  align-self: center;
+  text-align: justify;
+  align-items: center;
+  justify-content: stretch;
+}
+.articulo img{
+  width: 25%;
+  height: 90%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 20%;
+}
+.articulo a > h2{
+  color: black;
+  font-size: 2vw;
+  margin-left: 10%;
+}
+.articulo > a:hover{
+  cursor: pointer;
+}
+
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px dashed black;
+  margin-bottom: 5px;
+  padding-top: 10px;
+  text-align: center;
+}
+footer a{
+  color: black;
+  text-decoration: none;
+}
+
+@media(max-width:940px){
+  html{
+    height: 200%
+  }
+  body{
+    background-color: black;
+    border-color: white;
+    color: white;
+    height: 200%;
+  }
+  header{
+    background-image: url(../imagenes/cabnoche.jpg);
+    background-repeat: repeat-x;
+    background-size: cover;
+    font-weight: bolder;
+  }
+  #header-nav{
+    margin-top:10px;
+  }
+  #form-link{
+    font-weight: bolder;
+  }
+
+  main{
+    flex-direction: column;
+    height: 200%;
+  }
+  section{
+    width: 100%;
+    height: 50%;
+  }
+  .articulo{
+    background-color: black;
+    color: white;
+  }
+  .articulo > a h2{
+    font-size: 15px;
+    color:white;
+  }
+  footer{
+    color: white;
+    border-color: white;
+  }
+  footer a{
+    color: white
+  }
+}
