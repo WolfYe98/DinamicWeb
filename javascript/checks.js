@@ -54,13 +54,11 @@ let checkPassword = ()=>{
     let lowExpersion = /(?=.*[a-z])/;
     let upExpresion = /(?=.*[A-Z])/;
     let numbExpresion = /(?=.*[0-9])/;
-    let specialCaracter = /\W+/;
 
     let nice = true;
     if(!lowExpersion.test(password)){ nice = false; }
     if(!upExpresion.test(password)){ nice = false; }
     if(!numbExpresion.test(password)){ nice = false; }
-    if(!specialCaracter.test(password)){ nice = false; }
     return nice;
   }
   return true;
